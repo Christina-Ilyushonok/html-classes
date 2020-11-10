@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="javascript:alert(this.Date());">
+        <button type="submit">узнать время и дату</button>
+    </form> -->
+    <!-- <form action="javascript:alert(this.Date());">
+        <input type="checkbox" id="time" name="time" checked>
+         <label for="time">Время</label>
+         <input type="checkbox" id="data" name="data" checked>
+         <label for="data">Дата</label>
+         <button type="submit">узнать</button>
+    </form> -->
+    <form name="first_form" onsubmit="getForm(); return false">
+        <input name="one" value="1">
+        <input name="two" value="2">
+        <button type="submit">Вывести</button>
+      </form>
+      
+      <script>
+        let form = document.forms.first_form;
+
+        function getForm() {     
+            alert(`Вы ввели ${form.elements.one.value} и ${form.elements.two.value} `)
+       }
+      </script>
+</body>
+</html>
